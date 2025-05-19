@@ -128,3 +128,7 @@ footer .sub {
 .page-nav a:hover {
   text-decoration: underline;
 }
+
+footer.push-down {
+  margin-top: 80px;
+}
