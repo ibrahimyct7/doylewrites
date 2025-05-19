@@ -1,38 +1,40 @@
 
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
+  font-family: Georgia, serif;
   background-color: #f9f6f1;
   color: #2e1e12;
   line-height: 1.75;
 }
 
-header {
-  background-color: #f7e3dd;
+header.minimal {
   text-align: center;
-  padding: 40px 20px 30px;
-  border-bottom: 1px solid #d7c2b2;
+  padding: 50px 20px 20px;
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 2.6em;
   margin: 0;
-  color: #4c2e24;
+  color: #3d2a1f;
 }
 
 h2 {
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-top: 10px;
-  color: #7c5548;
+  color: #776357;
 }
 
 .quote {
   text-align: center;
-  padding: 20px 20px 10px;
+  padding: 20px 20px 0;
   font-size: 1.3em;
-  font-style: italic;
-  color: #5c3e33;
+}
+
+.quote-name {
+  margin-top: 8px;
+  font-size: 1em;
+  color: #5f4a3f;
 }
 
 .art-section {
@@ -73,4 +75,57 @@ footer {
 footer .sub {
   font-size: 0.9em;
   color: #d6c6bc;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #3a1f18;
+}
+
+#nav-drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f9f6f1;
+  z-index: 1000;
+  padding-top: 60px;
+  text-align: center;
+}
+
+#nav-drawer.open {
+  display: block;
+}
+
+#nav-drawer .close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+#nav-drawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-drawer li {
+  margin: 20px 0;
+}
+
+#nav-drawer a {
+  font-size: 1.4em;
+  color: #3b2c24;
+  text-decoration: none;
 }

@@ -5,16 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nathan Doyle</title>
   <link rel="stylesheet" href="style.css" />
+  
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('nav-drawer');
+    menu.classList.toggle('open');
+  }
+</script>
+
 </head>
 <body>
-  <header>
+  
+<div class="menu-toggle" onclick="toggleMenu()">&#8942;</div>
+<nav id="nav-drawer">
+  <button class="close-btn" onclick="toggleMenu()">×</button>
+  <ul>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="portfolio.html">PORTFOLIO</a></li>
+    <li><a href="blog.html">BLOG</a></li>
+  </ul>
+</nav>
+
+  <header class="minimal">
     <h1>Nathan Doyle</h1>
     <h2>Writer / Poet</h2>
   </header>
 
   <main>
-    <section class="quote">
-      <blockquote>“Language has teeth — I’m not afraid to get bit.”</blockquote>
+    <section class="quote center">
+      <blockquote><strong>“Language has teeth — I’m not afraid to get bit.”</strong></blockquote>
+      <p class="quote-name">Nathan Doyle</p>
     </section>
 
     <section class="art-section">
