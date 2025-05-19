@@ -133,21 +133,31 @@ footer.push-down {
   margin-top: 160px;
 }
 
-.home-icon {
+.menu-toggle {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 36px;
-  height: 36px;
+  top: 16px;
+  left: 16px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #3a1f18;
+}
+
+.popup-menu {
+  position: absolute;
+  top: 48px;
+  left: 12px;
+  background-color: #fdf7f1;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 10px;
+  display: none;
   z-index: 999;
 }
 
-.menu-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 36px;
-  cursor: pointer;
+.popup-menu a {
+  display: block;
+  padding: 8px 10px;
   color: #3a1f18;
-  z-index: 999;
+  text-decoration: none;
+  font-weight: bold;
 }
