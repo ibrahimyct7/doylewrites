@@ -1,20 +1,51 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Nathan Doyle</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Nathan Doyle</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <a href="index.html"><img src="assets/home.png" class="home-icon" /></a>
-  <main>
-    <h1>Contact</h1>
-    <nav><a href="about.html">About</a> <a href="portfolio.html">Portfolio</a> <a href="blog.html">Blog</a></nav>
-    <p>Email: your@email.com</p>
-  </main>
-  <footer>
-    <p>&copy; 2025 Nathan Doyle | All rights reserved</p>
-  </footer>
+<div class="menu-toggle" onclick="toggleMenu()">⋮</div>
+<div class="popup-menu" id="popup-menu">
+<a href="about.html">ABOUT</a>
+<a href="portfolio.html">PORTFOLIO</a>
+<a href="blog.html">BLOG</a>
+<a href="contact.html">CONTACT</a>
+</div>
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('popup-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+<a href="index.html"><img alt="Home" class="home-icon" src="home_icon.png"/></a>
+
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('popup-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+<a href="index.html"></a>
+<a href="index.html"></a>
+<header class="minimal">
+<h1>Contact</h1>
+<nav class="page-nav"><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="blog.html">Blog</a></nav>
+</header>
+<main>
+<section class="bio">
+<p>Want to collaborate, feature my work, or just talk stories? Reach out.</p>
+<p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+<p>Socials: Instagram, Substack, Twitter, etc.</p>
+</section>
+</main>
+<footer class="push-down">
+<p>© 2025 Nathan Doyle</p>
+<p class="sub">All rights reserved</p>
+</footer>
 </body>
 </html>

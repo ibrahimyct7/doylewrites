@@ -1,30 +1,70 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nathan Doyle</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nathan Doyle</title>
+<link href="style.css" rel="stylesheet"/>
+<script>
+  function togglePopup() {
+    const popup = document.getElementById('popup-menu');
+    popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+  }
+
+  window.onclick = function(event) {
+    const menu = document.getElementById('popup-menu');
+    const toggle = document.querySelector('.menu-toggle');
+    if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+      menu.style.display = 'none';
+    }
+  };
+</script>
 </head>
 <body>
-  <div class="menu-toggle" onclick="toggleMenu()">&#x22EE;</div>
-  <nav id="menu" class="hidden">
-    <a href="about.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <h1>Nathan Doyle</h1>
-    <h2>Writer / Poet</h2>
-    <p class="intro">Hi, I’m Nathan Doyle. I write fiction, poetry, and flash that cuts close to the bone...</p>
-    <p class="bold">Language has teeth — I’m not afraid to get bit.</p>
-    <p class="signature">Nathan Doyle</p>
-    <img src="assets/bees.jpg" alt="Poison and bees" class="featured-image" />
-  </main>
-  <footer>
-    <p>&copy; 2025 Nathan Doyle | All rights reserved</p>
-  </footer>
+<div class="menu-toggle" onclick="toggleMenu()">⋮</div>
+<div class="popup-menu" id="popup-menu">
+<a href="about.html">ABOUT</a>
+<a href="portfolio.html">PORTFOLIO</a>
+<a href="blog.html">BLOG</a>
+<a href="contact.html">CONTACT</a>
+</div>
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('popup-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+
+
+<header class="minimal">
+<h1>Nathan Doyle</h1>
+<h2>Writer / Poet</h2>
+</header>
+<main>
+<section class="quote center">
+<blockquote><strong>“Language has teeth — I’m not afraid to get bit.”</strong></blockquote>
+<p class="quote-name">Nathan Doyle</p>
+</section>
+<section class="art-section">
+<img alt="Poison and bees" class="hero-image" src="bee_art.png"/>
+<p class="caption">"Poison Taste Sweeter Than Nectar" — visual inspiration</p>
+</section>
+<section class="bio">
+<p>
+        Hi, I’m Nathan Doyle. I write fiction, poetry, and flash that cuts close to the bone. 
+        My work lives at the intersection of silence and survival—crafted with grit, clarity, and raw emotional weight.
+      </p>
+<p>
+        Whether it’s a poem that stings or a story that smolders, I write to connect. I write to remember. 
+        I write because language has teeth, and I’m not afraid to get bit.
+      </p>
+</section>
+</main>
+<footer>
+<p>© 2025 Nathan Doyle</p>
+<p class="sub">All rights reserved</p>
+</footer>
 </body>
 </html>
