@@ -22,12 +22,22 @@
 </script>
 </head>
 <body>
-<div class="menu-toggle" onclick="togglePopup()">⋮</div>
-<div id="popup-menu">
+<div class="menu-toggle" onclick="toggleMenu()">⋮</div>
+<div class="popup-menu" id="popup-menu">
 <a href="about.html">ABOUT</a>
 <a href="portfolio.html">PORTFOLIO</a>
 <a href="blog.html">BLOG</a>
+<a href="contact.html">CONTACT</a>
 </div>
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('popup-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+
+
 <header class="minimal">
 <h1>Nathan Doyle</h1>
 <h2>Writer / Poet</h2>
