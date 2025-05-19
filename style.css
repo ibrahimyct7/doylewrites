@@ -130,5 +130,24 @@ footer .sub {
 }
 
 footer.push-down {
-  margin-top: 80px;
+  margin-top: 160px;
+}
+
+.home-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+  z-index: 999;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 36px;
+  cursor: pointer;
+  color: #3a1f18;
+  z-index: 999;
 }
