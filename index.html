@@ -5,23 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nathan Doyle</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('nav-drawer');
-      menu.classList.toggle('open');
+  
+<script>
+  function togglePopup() {
+    const popup = document.getElementById('popup-menu');
+    popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+  }
+
+  window.onclick = function(event) {
+    const menu = document.getElementById('popup-menu');
+    const toggle = document.querySelector('.menu-toggle');
+    if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+      menu.style.display = 'none';
     }
-  </script>
+  };
+</script>
+
 </head>
 <body>
-  <div class="menu-toggle" onclick="toggleMenu()">&#8942;</div>
-  <nav id="nav-drawer">
-    <button class="close-btn" onclick="toggleMenu()">×</button>
-    <ul>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="portfolio.html">PORTFOLIO</a></li>
-      <li><a href="blog.html">BLOG</a></li>
-    </ul>
-  </nav>
+  <div class="menu-toggle" onclick="togglePopup()">&#8942;</div>
+  <div id="popup-menu">
+    <a href="about.html">ABOUT</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="blog.html">BLOG</a>
+  </div>
 
   <header class="minimal">
     <h1>Nathan Doyle</h1>
