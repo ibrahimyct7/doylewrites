@@ -11,7 +11,7 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
-  font-size: 30px;
+  font-size: 36px;
   cursor: pointer;
   color: #3a1f18;
   z-index: 999;
@@ -94,12 +94,12 @@ h2 {
 }
 
 .bio {
-  text-align: center;
   max-width: 700px;
   margin: 40px auto;
   padding: 0 20px;
   font-size: 1.1em;
   color: #3e2a20;
+  text-align: center;
 }
 
 footer {
